@@ -11187,17 +11187,17 @@ p {
 }
 
 /*/ portfolio wrapper */
-.portfolio-card {
+.projects-card {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-card .portfolio-card-img {
+.projects-card .projects-card-img {
   width: 100%;
 }
 
-.portfolio-card .portfolio-card-overlay {
+.projects-card .projects-card-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11218,13 +11218,13 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .portfolio-card .portfolio-card-overlay {
+  .projects-card .projects-card-overlay {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.portfolio-card .portfolio-card-overlay .portfolio-card-caption {
+.projects-card .projects-card-overlay .projects-card-caption {
   display: block;
   position: absolute;
   top: 50%;
@@ -11235,7 +11235,7 @@ p {
   width: 100%;
 }
 
-.portfolio-card:hover .portfolio-card-overlay {
+.projects-card:hover .projects-card-overlay {
   opacity: 1;
   visibility: visible;
   width: 100%;
@@ -11244,7 +11244,7 @@ p {
 }
 
 @media (max-width: 767.98px) {
-  .portfolio-card {
+  .projects-card {
     margin-bottom: 30px;
   }
   .service-card {
@@ -11252,15 +11252,15 @@ p {
   }
 }
 
-/* Pricing card */
-.pricing-wrapper {
+/* skills card */
+.skills-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
 
-.pricing-wrapper .pricing-card {
+.skills-wrapper .skills-card {
   display: block;
   border: 1px solid #dee2e6;
   padding: 30px 15px;
@@ -11277,86 +11277,86 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pricing-wrapper .pricing-card {
+  .skills-wrapper .skills-card {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.pricing-wrapper .pricing-card-header .pricing-card-icon {
+.skills-wrapper .skills-card-header .skills-card-icon {
   width: 70px;
   margin-bottom: 25px;
 }
 
-.pricing-wrapper .pricing-card-footer {
+.skills-wrapper .skills-card-footer {
   margin: 15px 0;
 }
 
-.pricing-wrapper .pricing-card-footer span {
+.skills-wrapper .skills-card-footer span {
   font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 600;
   opacity: .8;
 }
 
-.pricing-wrapper .pricing-card-footer span:first-child {
+.skills-wrapper .skills-card-footer span:first-child {
   position: relative;
   right: -6px;
   top: -6px;
   font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1300 - 300)));
 }
 
-.pricing-wrapper .pricing-card-title {
+.skills-wrapper .skills-card-title {
   margin-bottom: 15px;
   font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1300 - 300)));
 }
 
-.pricing-wrapper .pricing-card-list p {
+.skills-wrapper .skills-card-list p {
   margin-bottom: 12px;
   font-weight: 500;
   opacity: .6;
 }
 
-.pricing-wrapper .pricing-card-list p i {
+.skills-wrapper .skills-card-list p i {
   color: #ec185d;
 }
 
-.pricing-wrapper .pricing-card:hover {
+.skills-wrapper .skills-card:hover {
   -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
   border-radius: 0 !important;
 }
 
-.pricing-wrapper .pricing-card:first-child {
+.skills-wrapper .skills-card:first-child {
   border-radius: 0 0 0 0;
 }
 
-.pricing-wrapper .pricing-card:nth-child(2) {
+.skills-wrapper .skills-card:nth-child(2) {
   margin-left: -1px;
   margin-right: -1px;
 }
 
-.pricing-wrapper .pricing-card:last-child {
+.skills-wrapper .skills-card:last-child {
   border-radius: 0 0 0 0;
 }
 
 @media (max-width: 767.98px) {
-  .pricing-wrapper {
+  .skills-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .pricing-card {
+  .skills-card {
     border-radius: 0 !important;
     margin: 0 0 15px 0 !important;
     width: 100%;
   }
 }
 
-/* testmonial card */
-.testimonial-card {
+/* certificates card */
+.certificates-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -11368,13 +11368,13 @@ p {
   margin-bottom: 30px;
 }
 
-.testimonial-card-img-holder {
+.certificates-card-img-holder {
   min-width: 45px;
   max-width: 45px;
   z-index: 999;
 }
 
-.testimonial-card-img {
+.certificates-card-img {
   background: #fff;
   padding: 4px;
   width: 90px;
@@ -11382,7 +11382,7 @@ p {
   border-radius: 50%;
 }
 
-.testimonial-card-body {
+.certificates-card-body {
   text-align: left;
   border: 1px solid #dee2e6;
   background: #fff;
@@ -11390,13 +11390,13 @@ p {
   border-radius: 0;
 }
 
-.testimonial-card-title {
+.certificates-card-title {
   margin-top: 20px;
   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1300 - 300)));
 }
 
-/* blog wrapper */
-.blog-card {
+/* experience wrapper */
+.experience-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -11408,12 +11408,12 @@ p {
   overflow: hidden;
 }
 
-.blog-card-header {
+.experience-card-header {
   min-width: 250px;
   max-width: 20px;
 }
 
-.blog-card-img {
+.experience-card-img {
   border-radius: 0 0 0 0;
   width: 100%;
   height: 100%;
@@ -11421,24 +11421,24 @@ p {
      object-fit: cover;
 }
 
-.blog-card-body {
+.experience-card-body {
   padding: 30px 20px 30px 30px;
 }
 
-.blog-card-title {
+.experience-card-title {
   font-weight: 100;
 }
 
-.blog-card-caption {
+.experience-card-caption {
   margin: 15px 0 15px !important;
 }
 
-.blog-card-caption i {
+.experience-card-caption i {
   display: inline-block;
   width: 15px;
 }
 
-.blog-card-caption a {
+.experience-card-caption a {
   margin-right: 10px;
   color: #444;
   text-decoration: none;
@@ -11448,27 +11448,27 @@ p {
   font-size: 13px;
 }
 
-.blog-card-link {
+.experience-card-link {
   text-decoration: none;
   margin-top: 20px;
   display: block;
   font-size: 13px;
 }
 
-.blog-card-link i {
+.experience-card-link i {
   position: relative;
   top: 1px;
 }
 
 @media (max-width: 991.98px) {
-  .blog-card {
+  .experience-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blog-card .blog-card-header {
+  .experience-card .experience-card-header {
     width: 100%;
     max-width: 100%;
     min-width: 100%;
