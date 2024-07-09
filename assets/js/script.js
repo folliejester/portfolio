@@ -48,7 +48,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
         comment: formData.get('comment'),
     };
 
-    const response = await fetch('https://helloportfolio.folliejester.workers.dev', {
+    const response = await fetch('https://helloportfolio.folliejester.workers.dev/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
